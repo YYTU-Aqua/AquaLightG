@@ -1,0 +1,13 @@
+#-- connection --#
+network-manager-applet
+
+#-- mail client --#
+thunderbird
+
+#-- web browser --#
+firefox
+# chromium
+
+#-- security --#
+firewalld
+ufw

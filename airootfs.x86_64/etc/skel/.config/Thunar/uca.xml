@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>ここで Terminal を開く</name>
+	<unique-id>1591901656494762-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>カスタムアクションの例です。</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>gcr-key</icon>
+	<name>管理者として実行</name>
+	<unique-id>1592939198610420-1</unique-id>
+	<command>gksu thunar %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon></icon>
+	<name>管理者として実行</name>
+	<unique-id>1592939584838179-2</unique-id>
+	<command>gksu medit %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<text-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>管理者として実行</name>
+	<unique-id>1592939647884685-3</unique-id>
+	<command>gksu %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<other-files/>
+</action>
+</actions>

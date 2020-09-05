@@ -1,0 +1,3 @@
+#!/bin/sh
+Star=$(zenity --forms --add-entry "ユーザー名" )
+rm /home/$Star/.config/autostart/home.desktop

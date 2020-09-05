@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="gparted.desktop" score="5" last-seen="1595790246"/>
+    <application id="org.gnome.FileRoller.desktop" score="4" last-seen="1595797369"/>
+    <application id="org.gnome.tweaks.desktop" score="46" last-seen="1595791376"/>
+    <application id="org.gnome.Software.desktop" score="2" last-seen="1595790413"/>
+    <application id="thunar.desktop" score="83" last-seen="1595798706"/>
+    <application id="dbx_preference.desktop" score="26" last-seen="1595792341"/>
+    <application id="gnome-control-center.desktop" score="41" last-seen="1595795561"/>
+    <application id="xfce4-terminal.desktop" score="266" last-seen="1595798930"/>
+    <application id="medit.desktop" score="72" last-seen="1595798742"/>
+    <application id="org.gnome.Nautilus.desktop" score="182" last-seen="1595797799"/>
+    <application id="chromium.desktop" score="0" last-seen="1595797495"/>
+    <application id="qterminal.desktop" score="6" last-seen="1595790352"/>
+    <application id="org.gnome.Totem.desktop" score="0" last-seen="1595795300"/>
+    <application id="org.gnome.Terminal.desktop" score="60" last-seen="1595796385"/>
+    <application id="org.gnome.baobab.desktop" score="0" last-seen="1595790186"/>
+  </context>
+</application-state>

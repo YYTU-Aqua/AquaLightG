@@ -1,0 +1,12 @@
+Extension "XFIG Input" failed to load because (プログラムの) 依存関係が満たされませんでした。
+Dependency:
+	type: executable
+	location: パス
+	string: fig2dev
+
+Extension "LaTeX (pdflatex)" failed to load because (プログラムの) 依存関係が満たされませんでした。
+Dependency:
+	type: executable
+	location: パス
+	string: pdflatex
+

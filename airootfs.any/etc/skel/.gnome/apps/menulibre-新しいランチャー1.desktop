@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=新しいランチャー
+Comment=このアプリケーションの簡単な紹介
+Icon=breeze-settings
+Exec=gksu con
+Actions=
+Categories=Settings;X-XFCE;X-Xfce-Toplevel;
+OnlyShowIn=Old;

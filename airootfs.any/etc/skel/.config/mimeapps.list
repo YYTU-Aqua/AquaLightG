@@ -1,0 +1,24 @@
+[Default Applications]
+image/png=viewnior.desktop
+inode/directory=nautilus.desktop
+application/x-gnome-saved-searc=nautilus.desktop
+
+[Added Associations]
+image/png=viewnior.desktop;
+text/plain=medit.desktop;
+application/vnd.squashfs=mousepad.desktop;medit.desktop;
+application/x-shellscript=medit.desktop;
+text/x-qml=mousepad.desktop;
+application/x-theme=medit.desktop;
+text/x-csrc=medit.desktop;
+text/html=medit.desktop;firefox.desktop;
+application/json=medit.desktop;
+x-scheme-handler/http=exo-web-browser.desktop;
+x-scheme-handler/https=exo-web-browser.desktop;
+application/octet-stream=medit.desktop;
+application/x-desktop=medit.desktop;
+application/vnd.ms-publisher=medit.desktop;
+inode/directory=exo-file-manager.desktop;
+x-scheme-handler/trash=exo-file-manager.desktop;
+image/svg+xml=org.inkscape.Inkscape.desktop;gimp.desktop;viewnior.desktop;
+audio/x-mod=medit.desktop;

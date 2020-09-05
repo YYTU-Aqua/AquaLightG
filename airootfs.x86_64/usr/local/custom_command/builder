@@ -1,0 +1,60 @@
+#!/bin/sh
+zenity --question --text "これはまだ開発段階ですそれでも続けますか？" --ok-label "OK" cancel-label "No"
+case $? in
+0) main=$(zenity --list --title "操作を選んでね" --text="操作を選んでね" --column "" 背景の設定 Calamaresの設定 パッケージの設定 GRUBの背景 GRUB表示名 LightDM LiveCDusername build)
+;;
+1) exit
+;;
+esac
+case $main in
+背景の設定) zenity --info --title "info" --text "Aqua.jpgに名前を変更してください"
+sudo thunar channels/aqua.add/airootfs.any/usr/share/backgrounds/
+sudo sh builder
+;;
+Calamaresの設定) zenity --info --title "info" --text "写真やbranding.descを編集してください"
+sudo thunar channels/aqua.add/airootfs.any/usr/share/calamares/branding/alter
+sudo sh builder
+;;
+パッケージの設定) sudo medit channels/aqua.add/packages.x86_64/packages.x86_64
+sudo sh builder
+;;
+GRUBの背景) zenity --info --title "info" --text "splash.pngを編集してください"
+sudo thunar channels/aqua.add/
+sudo sh builder
+;;
+GRUB表示名) sudo medit channels/aqua.add/airootfs.any/etc/default/grub
+sudo sh builder
+;;
+LightDM) sudo medit channels/aqua.add/airootfs.any/etc/lightdm/lightdm.conf
+sudo sh builder
+;;
+LiveCDusername) zenity --forms --add-entry "ユーザー名" >user
+name=$(<user)
+sudo sh builder
+;;
+build)use=$(zenity --forms --add-entry "あなたのusernameは？")
+sudo ./keyring.sh --alter-add --arch32-add
+sudo pacman -S --needed git make arch-install-scripts squashfs-tools libisoburn dosfstools lynx archiso -y
+sudo rm -r -f channels/aqua.add/airootfs.any/etc/skel/
+sudo mkdir channels/aqua.add/airootfs.any/etc/skel
+sudo cp -f -r /home/$use/.config channels/aqua.add/airootfs.any/etc/skel/
+sudo cp -f -r /home/$use/.local channels/aqua.add/airootfs.any/etc/skel/
+sudo cp -f -r /home/$use/Desktop channels/aqua.add/airootfs.any/etc/skel/
+sudo mkdir channels/aqua.add/airootfs.any/etc/skel/Desktop
+sudo mkdir channels/aqua.add/airootfs.any/etc/skel/ダウンロード
+sudo mkdir channels/aqua.add/airootfs.any/etc/skel/テンプレート
+sudo mkdir channels/aqua.add/airootfs.any/etc/skel/公開
+sudo mkdir channels/aqua.add/airootfs.any/etc/skel/ドキュメント
+sudo mkdir channels/aqua.add/airootfs.any/etc/skel/音楽
+sudo mkdir channels/aqua.add/airootfs.any/etc/skel/画像
+sudo mkdir channels/aqua.add/airootfs.any/etc/skel/ビデオ
+sudo rm -f -r channels/aqua.add/airootfs.any/usr/share/themes/
+sudo cp -r -f /usr/share/themes channels/aqua.add/airootfs.any/usr/share/
+sudo rm -f -r channels/aqua.add/airootfs.any/usr/share/icons/
+sudo cp -r -f /usr/share/icons channels/aqua.add/airootfs.any/usr/share/
+sudo ./build.sh -b -u $name -j aqua
+zenity --notification --text "処理が終わりました。"
+;;
+*) exit
+;;
+esac

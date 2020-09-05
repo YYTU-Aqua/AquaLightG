@@ -1,0 +1,1 @@
+sudo /etc/init.d/rc6.d/K99vmware-tools start

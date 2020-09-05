@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=コントロールパネル
+Comment=
+Exec=gksu con
+Icon=breeze-settings
+Path=
+Terminal=false
+StartupNotify=false

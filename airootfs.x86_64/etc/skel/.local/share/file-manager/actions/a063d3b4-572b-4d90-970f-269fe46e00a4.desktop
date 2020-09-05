@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Action
+ToolbarLabel[ja_JP]=New file-manager action
+ToolbarLabel[ja]=New file-manager action
+Name[ja_JP]=New file-manager action
+Name[ja]=New file-manager action
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+Exec=sudo 
+Name[ja_JP]=sudo
+Name[ja]=sudo

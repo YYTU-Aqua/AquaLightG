@@ -1,0 +1,14 @@
+# fcitx config
+alterlinux-fcitx-conf
+
+# fcitx
+fcitx
+fcitx-configtool
+fcitx-mozc
+fcitx-qt5
+
+# Firefox
+firefox-i18n-ja
+
+# Thunderbird
+thunderbird-i18n-ja

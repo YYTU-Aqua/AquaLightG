@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=管理者で実行
+Comment=このアプリケーションの簡単な紹介
+Icon=applications-other
+Exec=gksu %f
+Actions=
+Categories=X-XFCE;X-Xfce-Toplevel;

@@ -1,0 +1,38 @@
+#!/bin/sh
+if [ ! -z $1 ]
+then
+case $1 in
+Change) cd /usr/local/custom_command
+git clone https://github.com/YYTU-Aqua/AquaAddSoft.git
+cd
+cp /usr/local/custom_command/AquaAddSoft/Change /usr/local/custom_command/Change
+rm -r -f /usr/local/custom_command/AquaAddSoft
+;;
+-Su) cd /usr/local/custom_command
+git clone https://github.com/YYTU-Aqua/AquaAddSoft.git
+cd AquaAddSoft
+dd=$(<update)
+rm -r -f /usr/local/custom_command/AquaAddSoft
+echo $dd
+;;
+zsh-terminal) cd /usr/local/custom_command
+git clone https://github.com/YYTU-Aqua/AquaAddSoft.git
+cd
+cp /usr/local/custom_command/AquaAddSoft/zsh-terminal /usr/local/custom_command/zsh-terminal
+rm -r -f /usr/local/custom_command/AquaAddSoft
+;;
+builder) cd /usr/local/custom_command
+git clone https://github.com/YYTU-Aqua/AquaBuilder.git
+ln /usr/local/custom_command/AquaBuilder/builder /usr/local/custom_command/builder
+sudo chmod +x /usr/local/custom_command/builder
+;;
+*) echo そんなことより$1食べたい $($(sudo pacman -S $1))
+;;
+esac
+case $dd in
+0) echo "アップデートはありません"
+;;
+*) sudo update
+;;
+esac
+fi

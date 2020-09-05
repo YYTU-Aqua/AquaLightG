@@ -1,0 +1,21 @@
+#!/bin/sh
+extension=$(zenity --width 500 --height 300 --list --title "ufwの設定" --text="ufwの設定" --column "設定" ufwの停止・起動 ポートの開放 ufwの状態)
+case $extension in
+ufwの停止・起動) on=$(zenity --width 500 --height 300 --list --radiolist --column=Selected --column "ufwの設定" False enable False disable)
+sudo ufw $on
+sudo ufw-set
+;;
+ポートの開放) port=$(zenity --width 500 --height 300 --entry --title "Port" --text "開放するポート番号を入力してください")
+sudo ufw allow $port
+sudo ufw-set
+;;
+ufwの状態) sudo ufw status >/usr/local/custom_command/uf
+zenity --text-info --height 300 --width 500 --filename "/usr/local/custom_command/uf"
+sudo ufw-set
+;;
+*) exit
+esac
+
+
+
+

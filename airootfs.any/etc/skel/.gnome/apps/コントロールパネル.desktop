@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=コントロールパネル
+NoDisplay=true
+Icon=breeze-settings
+Exec=gksu con
+Actions=
+Categories=Other;
+OnlyShowIn=Old;

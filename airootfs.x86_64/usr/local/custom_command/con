@@ -1,0 +1,2 @@
+#!/bin/sh
+thunar /usr/local/custom_command/コントロールパネル/

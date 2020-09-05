@@ -1,0 +1,5 @@
+#!/bin/zsh
+if [$1]
+then
+  echo そんなことより$1捨てようもう腐ってる $($(sudo pacman -R $1))
+fi

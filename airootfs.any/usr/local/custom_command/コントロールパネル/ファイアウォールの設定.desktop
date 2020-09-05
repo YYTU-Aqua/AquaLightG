@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ファイアウォールの設定
+Comment=
+Exec=gksu ufw-set
+Icon=/usr/local/custom_command/382719.png
+Path=
+Terminal=false
+StartupNotify=false

@@ -1,0 +1,11 @@
+#!/bin/zsh
+zenity --warning --title "再起動かログアウト" --text "変更を適用するためには再起動かログアウトをしてください"
+zenity --question --text "どのテーマにしますか？" --ok-label "ライトテーマ" --cancel-label "ダークテーマ"
+case $? in
+0) sudo rm -f -r /usr/share/themes/Adwaita-dark/gtk-3.0/gtk.css
+sudo ln /usr/share/themes/BlueSky-Mountain-Light/gtk-3.0/gtk.css /usr/share/themes/Adwaita-dark/gtk-3.0/gtk.css
+;;
+1) sudo rm -f -r /usr/share/themes/Adwaita-dark/gtk-3.0/gtk.css
+sudo ln /usr/share/themes/Ad-Dark/gtkDark.css /usr/share/themes/Adwaita-dark/gtk-3.0/gtk.css
+;;
+esac

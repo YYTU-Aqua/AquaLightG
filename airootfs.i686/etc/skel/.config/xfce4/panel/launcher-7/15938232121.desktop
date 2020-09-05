@@ -1,0 +1,30 @@
+[Desktop Entry]
+Version=1.0
+Name=Firefox
+GenericName=Web Browser
+GenericName[ja]=ウェブ・ブラウザ
+Comment=Browse the World Wide Web
+Comment[ja]=ウェブを閲覧します
+Keywords=Internet;WWW;Browser;Web;Explorer
+Keywords[ja]=Internet;WWW;Web;インターネット;ブラウザ;ウェブ;エクスプローラ
+Exec=/usr/lib/firefox/firefox %u
+Icon=firefox
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+MimeType=text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;application/x-xpinstall;application/pdf;application/json;
+StartupNotify=true
+StartupWMClass=firefox
+Categories=Network;WebBrowser;
+Actions=new-window;new-private-window;
+X-XFCE-Source=file:///usr/share/applications/firefox.desktop
+
+[Desktop Action new-window]
+Name=New Window
+Name[ja]=新しいウィンドウ
+Exec=/usr/lib/firefox/firefox --new-window %u
+
+[Desktop Action new-private-window]
+Name=New Private Window
+Name[ja]=新しいプライベートウィンドウ
+Exec=/usr/lib/firefox/firefox --private-window %u

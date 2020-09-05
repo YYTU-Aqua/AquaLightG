@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ターミナルの設定
+Comment=
+Exec=xfce4-terminal --preferences
+Icon=utilities-terminal
+Path=
+Terminal=false
+StartupNotify=false

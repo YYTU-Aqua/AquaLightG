@@ -1,0 +1,5 @@
+2020/06/13-12:23:42.400 977e Reusing MANIFEST /home/yytu/.config/chromium/Default/IndexedDB/https_qiita.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/06/13-12:28:53.362 9933 Level-0 table #5: started
+2020/06/13-12:28:53.363 9933 Level-0 table #5: 1180 bytes OK
+2020/06/13-12:28:53.364 9933 Delete type=0 #3
+2020/06/13-12:28:53.364 9933 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

@@ -1,0 +1,8 @@
+import tkinter
+
+# Tkクラス生成
+tki = tkinter.Tk()
+# 画面サイズ
+tki.geometry('300x200')
+# 画面タイトル
+tki.title('ラジオボタン')

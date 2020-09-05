@@ -1,0 +1,10 @@
+#-- lsd --#
+lsd
+
+#-- Prompt --#
+powerline-go
+
+#-- zsh --#
+zsh
+zsh-autosuggestions
+zsh-syntax-highlighting

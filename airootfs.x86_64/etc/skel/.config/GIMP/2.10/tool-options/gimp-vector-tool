@@ -1,0 +1,10 @@
+# GIMP gimp-vector-tool options
+
+(foreground (color-rgb 0.84210526315789469 0.92646779403382096 1))
+(brush "1. Pixel")
+(dynamics "Dynamics Off")
+(pattern "Pine")
+(gradient "描画色から背景色 (RGB)")
+(palette "Color History")
+
+# end of gimp-vector-tool options
